@@ -34,16 +34,16 @@ int Relay_PIN[] = { 13,10,9,8,7,6,5 }; //sections of sprayer, when changed also 
 #define RateSWRight_PIN A6   //Rate +/- switch
 
 //sprayer config settings
-#define SectNum 7						// number of sections equiped max 16, depends on hardware, change the lines 10 to 20 in tab ReadSwitches_buildBytes of void SectSWRead to fit to the input switches
+#define SectNum 5						// number of sections equiped max 16, depends on hardware, change the lines 10 to 20 in tab ReadSwitches_buildBytes of void SectSWRead to fit to the input switches
 boolean SectSWequiped = true;			// true if section input switches are equiped, else: false
 //Example1: motor valve is controled only by Switch not by AOG, no Flowmeter, : RateControl..Equiped = false; RateSW..Equiped = true; RateControlPRM = false;
 //Example2: PWM valve, with flowmeter all controled by AOG:   RateControl..Equiped = true; RateSW..Equiped = true; RateControlPRM = true;
-boolean RateControlLeftEquiped = true;  // true if Rate control is there, else: false
-boolean RateSWLeftEquiped = true;		// true if Rate control Pressure switch is there, else: false
+boolean RateControlLeftEquiped = false;  // true if Rate control is there, else: false
+boolean RateSWLeftEquiped = false;		// true if Rate control Pressure switch is there, else: false
 boolean RateControlRightEquiped = false;// true if Rate control is there, else: false
 boolean RateSWRightEquiped = false;     // true if Rate control Pressure switch is there, else: false
 boolean RateControlPWM = false;			// true if PWM valve, false if Motor drive for pressure changing
-uint8_t SectRelaysON = 1;				// relays spray on 1 or 0 (high or low)
+uint8_t SectRelaysON = 0;				// relays spray on 1 or 0 (high or low)
 uint8_t DocumentationOnly = 0;			// 0: use as section control, 1: Documentation only = AOG writes the state of the input switches
 
 #define BaudRate 38400					// Baudrate = speed of serial port. AOG uses 38400. If useing bluetooth module, you need to configure it to this Baudrate
