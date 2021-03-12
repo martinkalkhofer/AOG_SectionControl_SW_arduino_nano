@@ -2,5 +2,6 @@
     "programmer": "AVR ISP",
     "board": "arduino:avr:nano",
     "configuration": "cpu=atmega328old",
-    "port": "COM8"
+    "port": "COM4",
+    "sketch": "AOG_SectionControl\\AOG_SectionControl.ino"
 }

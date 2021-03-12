@@ -3,8 +3,19 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:\\Users\\01421167\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\**",
-                "C:\\Users\\01421167\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.2\\**"
+
+                "${workspaceFolder}\\**",
+                "c:/Program Files (x86)/arduino/hardware/arduino/avr/cores/arduino/",
+                "c:/Program Files (x86)/arduino/hardware/arduino/avr/libraries/EEPROM/",
+                "c:/Program Files (x86)/arduino/hardware/arduino/avr/libraries/SPI/",
+                "c:/Program Files (x86)/arduino/hardware/arduino/avr/libraries/SoftwareSerial/",
+                "c:/Program Files (x86)/arduino/hardware/arduino/avr/libraries/Wire/",
+                "c:/Program Files (x86)/arduino/hardware/tools/avr/avr/include/",
+                "c:/Program Files (x86)/arduino/hardware/tools/avr/avr/include/avr/",
+                "c:/Program Files (x86)/arduino/hardware/tools/avr/avr/include/compat/",
+                "c:/Program Files (x86)/arduino/hardware/tools/avr/avr/include/util/",
+                "c:/Program Files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/7.3.0/include/",
+                "c:/Program Files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed/"
             ],
             "forcedInclude": [
                 "C:\\Users\\01421167\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.2\\cores\\arduino\\Arduino.h"
